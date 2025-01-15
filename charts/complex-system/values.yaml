@@ -1,0 +1,7 @@
+components:
+  backend:
+    image: backend-app:latest
+    replicaCount: 2
+  frontend:
+    image: frontend-app:stable
+    replicaCount: 1
