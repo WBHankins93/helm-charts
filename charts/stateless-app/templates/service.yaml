@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: stateless-app-service
+  labels:
+    app: stateless-app
+spec:
+  type: ClusterIP # Could also be LoadBalancer if external access is needed
+  selector:
+    app: stateless-app
+  ports:
+    - name: http
+      protocol: TCP
+      port: 80 # Port exposed by the service
+      targetPort: 80 # Port exposed by the container

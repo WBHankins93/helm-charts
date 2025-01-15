@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: stateful-app-service
+  labels:
+    app: stateful-app
+spec:
+  clusterIP: None # Ensures a stable DNS for StatefulSets
+  selector:
+    app: stateful-app
+  ports:
+    - name: app-port
+      protocol: TCP
+      port: 8080 # Service port
+      targetPort: 8080 # Container port
