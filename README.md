@@ -250,16 +250,5 @@ We welcome contributions to improve and expand the available Helm charts.
 3. Ensure all new code follows best practices and passes lint checks.
 4. Submit a pull request with a detailed description of your changes.
 
-### Code of Conduct
-All contributors must adhere to the [Code of Conduct](CODE_OF_CONDUCT.md).
-
 ---
-
-## License
-This project is licensed under the MIT License. See [LICENSE](LICENSE.md) for details.
-
----
-
-For any questions or support, please contact [support@yourorganization.com](mailto:support@yourorganization.com).
-
 
